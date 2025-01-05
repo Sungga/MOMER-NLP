@@ -1,11 +1,15 @@
 :root {
     --header-height: 66px;
+    --slider-height: 270px;
     
     --header-color: rgba(255, 255, 255, 0.5);
     --color-bold: #221F20;
     --color-medium: #727272;
     --color-pale: #e1e1e1;
     --color-white: #fff;
+    --color-link: #007BFF;
+
+    --font-size-base: 1.4rem;
 }
 
 * {
@@ -28,4 +32,24 @@ body {
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.hidden {
+    top: calc(100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
+    top: calc(100% + 8px);
+    opacity: 1;
+    visibility:inherit;
+
+}
+
+hr {
+    background-color: var(--color-pale);
+    height: 1px;        
+    border: none;     
+    margin: 20px 0;
 }
