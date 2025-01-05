@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #343a40;
+            color: white;
+            height: 100vh;
+            padding: 15px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learning Management System</h1>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Navigation</h3>
+            <a href="#">Dashboard</a>
+            <a href="#">Quản lý tài liệu</a>
+            <a href="#">Quản lý người dùng</a>
+            <a href="#">Phân quyền</a>
+            <a href="#">Tìm kiếm chương trình</a>
+            <a href="#">Thông báo</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Dashboard Section -->
+            <div class="card">
+                <h3>Dashboard</h3>
+                <p>Chào mừng Admin! Đây là giao diện quản lý tổng quan của hệ thống.</p>
+            </div>
+
+            <!-- Example Section: Quản lý tài liệu -->
+            <div class="card">
+                <h3>Quản lý tài liệu</h3>
+                <button onclick="uploadFile()">Tải lên tài liệu mới</button>
+                <p>Danh sách tài liệu đã tải lên:</p>
+                <ul id="document-list">
+                    <li>File1.pdf</li>
+                    <li>Video bài giảng.mp4</li>
+                </ul>
+            </div>
+
+            <!-- Example Section: Quản lý người dùng -->
+            <div class="card">
+                <h3>Quản lý người dùng</h3>
+                <button onclick="addUser()">Thêm người dùng mới</button>
+                <p>Danh sách người dùng:</p>
+                <ul id="user-list">
+                    <li>Người dùng 1 - admin</li>
+                    <li>Người dùng 2 - học viên</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function uploadFile() {
+            alert('Chức năng tải lên tài liệu đang được phát triển!');
+        }
+
+        function addUser() {
+            alert('Chức năng thêm người dùng đang được phát triển!');
+        }
+    </script>
+</body>
+</html>
