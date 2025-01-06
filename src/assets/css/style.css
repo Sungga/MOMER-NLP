@@ -27,10 +27,13 @@ header {
     height: 48px;
 }
 
-.header__left h1 {
+.header__left h1,
+.header__left a {
     font-size: var(--font-size-base);
     display: inline-block;
     margin-left: 16px;
+    text-decoration: none;
+    color: var(--color-bold);
 }
 
 .header__center {
@@ -331,6 +334,7 @@ header {
     object-fit: cover;
     position: absolute;
     top: 0;
+    transition: all ease .3s;
 }
 
 /* -------------------------<< list course >>------------------------------ */
@@ -431,4 +435,31 @@ header {
     font-size: 1.4rem;
     color: var(--color-primary);
     text-decoration: none;  
+}
+
+/* -------------------------------------<< COURSE >>------------------------------------------- */
+.container-course {
+    margin-top: var(--header-height);
+    display: flex;
+    padding: 32px;
+}
+
+.course__left {
+    width: 75%;
+}
+
+.course__info h1 {
+    font-size: 3.2rem;
+    margin-bottom: 16px;
+}
+
+.course__info p {
+    font-size: 1.4rem;
+    color: #000c;
+}
+
+.course__right {
+    width: 25%;
+    height: 100px;
+    background-color: red;
 }

@@ -1,62 +1,24 @@
 // --------------<< function >>-------------
-function show(element) {
-    element.classList.add('show');
-    element.classList.remove('hidden'); 
-}
-
-function hidden(element) {
-    element.classList.add('hidden');
-    element.classList.remove('show'); 
-}
-
-function toggle(elementClick, elementToggle) {
-    elementClick.addEventListener('click', () => {
-        // Lấy trạng thái hiện tại của aria-expanded
-        const isExpanded = elementClick.getAttribute('aria-expanded') === 'true';
-    
-        // Đảo trạng thái aria-expanded
-        elementClick.setAttribute('aria-expanded', !isExpanded);
-    
-        // Hiển thị/ẩn courses
-        if (isExpanded) {
-            hidden(elementToggle);
-        } else {
-            show(elementToggle);
-        }
-    });
-    
-    document.addEventListener('click', (event) => {
-        if (!elementClick.contains(event.target) && !elementToggle.contains(event.target)) {
-            hidden(elementToggle);
-            elementClick.setAttribute('aria-expanded', 'false');
-        }
+// ham set vi tri cho slide
+function setSliderImg(indexShow) {
+    sliderImg.forEach(function (img, index) {
+        img.style.left = `${(index - indexShow) * 100}%`;
     });
 }
 
-// -----------------<< search results >>----------------------
-const inputSearch = document.getElementById('search');
-const results = document.querySelector('.header__searchResults');
+// -----------------<< change slide >>----------------------
+const sliderImg = document.querySelectorAll('.slider__list img');
 
-inputSearch.addEventListener('focus', () => {
-    show(results);
-});
+// set vi tri ban dau cho slide show
+let imgShow = 0;
+setSliderImg(imgShow);
 
-// Bắt sự kiện blur
-inputSearch.addEventListener('blur', () => {
-    hidden(results);
-});
+setInterval(function () {
+    imgShow++;
 
-// -----------------<< courses >>----------------------
-const btnCourse = document.querySelector('.header__course--button');
-const courses = document.querySelector('.header__course--list');
-toggle(btnCourse, courses);
+    if (imgShow == sliderImg.length) {
+        imgShow = 0;
+    }
 
-// -----------------<< notification >>----------------------
-const btnNoti = document.querySelector('.header__noti i');
-const noti = document.querySelector('.header__noti--list');
-toggle(btnNoti, noti);
-
-// -----------------<< user >>----------------------
-const btnUser = document.querySelector('.header__user>img');
-const user = document.querySelector('.header__user--menu');
-toggle(btnUser, user);
+    setSliderImg(imgShow);
+}, 5000);
