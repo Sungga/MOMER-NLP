@@ -1,0 +1,130 @@
+/* -------------------------------------<< COURSE >>------------------------------------------- */
+.container-course {
+    margin-top: var(--header-height);
+    display: flex;
+    padding: 32px;
+}
+
+.course__left {
+    width: 75%;
+    margin-right: 16px;
+}
+
+.course__info {
+    margin-bottom: 32px;
+}
+
+.course__info h1 {
+    font-size: 3.2rem;
+    margin-bottom: 16px;
+}
+
+.course__info p {
+    font-size: 1.4rem;
+    color: #000c;
+}
+
+.course__content h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.course__overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.course__overview--left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.course__overview--left p, 
+.course__overview--left strong {
+    font-size: 1.4rem;
+    color: var(--color-bold);
+}
+
+.course__overview--left i {
+    font-size: 0.4rem;
+    margin: 0 12px;
+}
+
+.course__overview--right p {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.course__section {
+    margin-bottom: 12px;
+}
+
+.course__section--name {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 30px;
+    background-color: var(--color-pale);
+    border: 1px solid var(--color-medium);
+    border-radius: 8px;
+}
+
+.course__section--name p.course__status {
+    color: var(--color-primary); 
+    margin-right: 12px; 
+    font-size: 2rem;
+}
+
+.course__section--name p {
+    font-size: 1.4rem;
+}
+
+.course__section--name span {
+    font-size: 1.4rem;
+    color: var(--color-medium); 
+}
+
+.course__lessons.hidden {
+
+}
+
+.course__lesson--item {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid var(--color-pale);
+}
+
+.course__lesson--item i {
+    font-size: 1.2rem; 
+    margin-right: 12px;
+    color: var(--color-primary);
+}
+
+.course__lesson--item p {
+    font-size: 1.4rem;
+}
+
+.course__lesson--item span {
+    font-size: 1.4rem;
+    color: var(--color-medium); 
+}
+
+
+
+
+
+
+.course__right {
+    width: 25%;
+    height: 100px;
+    background-color: red;
+    margin-left: 16px;
+}
