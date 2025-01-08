@@ -1,0 +1,228 @@
+/* -------------------------<< mobile screen >>------------------------------ */
+@media (max-width:720px) {
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .personnal__items {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .items__infor {
+        width: calc(100% - 24px);
+        height: auto;
+        margin: auto;
+        bottom: -108px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .infor__avata {
+        width: 134px;
+        height: 134px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infor__avata img {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .items__name {
+        width: 100%;
+        margin-top: -86px;
+    }
+
+    .items__name h2 {
+        width: 100%;
+    }
+
+    .personal__content {
+        width: calc(100% - 36px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personal__content .personal__status {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .personal__status .status__introduce h4 {
+        font-size: 2.2rem;
+    }
+
+    .personal__status .status__introduce .introduce__content i {
+        font-size: 2.0rem;
+    }
+
+    .personal__status .status__introduce .introduce__content span {
+        font-size: 2.0rem;
+    }
+    .personal__status .status__introduce .introduce__content strong {
+        font-size: 2.0rem;
+    }
+
+    .personal__document {
+        width: 100%;
+    }
+
+    .personal__document h4 {
+        font-size: 2.2rem;
+    }
+
+    .personal__document .document__infor {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .personal__document .document__infor .infor__img {
+        width: 100%;
+    }
+
+    .infor__content {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .infor__content a {
+        font-size: 2.2rem;
+    }
+
+    .infor__content p {
+        margin-top: 24px;
+        font-size: 2.0rem;
+    }
+    
+}
+
+
+/* -------------------------<< tablet screen >>------------------------------ */
+@media (min-width:721px) and (max-width:1023px) {
+    .container {
+        width: calc(100% - 64px);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .personnal__items {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .items__infor {
+        width: calc(100% - 24px);
+        height: auto;
+        margin: auto;
+        bottom: -108px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .infor__avata {
+        width: 134px;
+        height: 134px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infor__avata img {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .items__name {
+        width: 100%;
+        margin-top: -86px;
+    }
+
+    .items__name h2 {
+        width: 100%;
+    }
+
+    .personal__content {
+        width: calc(100% - 36px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personal__content .personal__status {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .personal__status .status__introduce h4 {
+        font-size: 2.2rem;
+    }
+
+    .personal__status .status__introduce .introduce__content i {
+        font-size: 2.0rem;
+    }
+
+    .personal__status .status__introduce .introduce__content span {
+        font-size: 2.0rem;
+    }
+    .personal__status .status__introduce .introduce__content strong {
+        font-size: 2.0rem;
+    }
+
+    .personal__document {
+        width: 100%;
+    }
+
+    .personal__document h4 {
+        font-size: 2.2rem;
+    }
+
+    .personal__document .document__infor {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .personal__document .document__infor .infor__img {
+        width: 100%;
+    }
+
+    .infor__content {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .infor__content a {
+        font-size: 2.2rem;
+    }
+
+    .infor__content p {
+        margin-top: 24px;
+        font-size: 2.0rem;
+    }
+
+}
