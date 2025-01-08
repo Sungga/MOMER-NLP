@@ -6,7 +6,6 @@
 }
 
 /* -------------------------------------<< COURSE LEFT >>------------------------------------------- */
-
 .course__left {
     width: 75%;
     margin-right: 16px;
@@ -89,10 +88,6 @@
 .course__section--name span {
     font-size: 1.4rem;
     color: var(--color-medium); 
-}
-
-.course__lessons.hidden {
-
 }
 
 .course__lesson--item {

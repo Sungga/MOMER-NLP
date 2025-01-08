@@ -26,3 +26,79 @@
 }
 
 /* -----------------------------------<< LEARNING RIGHT >>-------------------------------------- */
+.learning__right {
+    position: relative;
+    padding-top: 43.2px;
+    height: calc(100vh - var(--header-height));
+    width: 25%;
+    overflow-y: overlay;
+}
+
+.learning__right h3 {
+    padding: 12px 16px;
+    font-size: 1.6rem;
+    width: 25%;
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    background-color: var(--color-white);
+    z-index: 100;
+}
+
+.learning__section--name {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 30px;
+    background-color: var(--color-super-pale);
+    border-bottom: 1px solid var(--color-pale);
+    position: sticky;
+    top: 0;
+    transition: all ease .3s;
+}
+
+.learning__section--name p {
+    font-size: 1.4rem;
+}
+
+.learning__section--name .learning__section--time {
+    font-size: 1.2rem;
+    color: var(--color-medium);
+    margin-top: 8px;
+}
+
+.learning__section--name span {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    font-weight: 600; 
+}
+
+.learning__lesson--item {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    transition: all ease .3s;
+}
+
+.learning__section--name,
+.learning__lesson--item:hover {
+    background-color: var(--color-super-pale);
+}
+
+.learning__lesson--item i {
+    font-size: 1.2rem; 
+    margin-right: 12px;
+    color: var(--color-primary);
+}
+
+.learning__lesson--item p {
+    font-size: 1.4rem;
+}
+
+.learning__lesson--item span {
+    font-size: 1.4rem;
+    color: var(--color-medium); 
+}
