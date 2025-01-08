@@ -1,0 +1,135 @@
+.container-auth {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* -------------------------------<< login >>----------------------------------- */
+.container-login,
+.container-signup,
+.container-password {
+    min-width: 480px;
+    margin: auto;
+    border: 1px solid #000;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.container-login h1,
+.container-signup h1,
+.container-password h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+}
+
+.container-login p,
+.container-signup p,
+.container-password p {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.container-login input:not([type="submit"]):not([type="checkbox"]),
+.container-signup input:not([type="submit"]):not([type="checkbox"]),
+.container-password input:not([type="submit"]):not([type="checkbox"]) {
+    font-size: 1.6rem;
+    padding: 12px 16px;
+    width: 100%;
+    background-color: var(--color-white);
+    outline: none;
+    border: 1px solid var(--color-bold);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.login__option,
+.signup__option {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.login__option--remember {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.login__option--remember input {
+    width: 16px;
+    height: 16px;
+}
+
+.login__option--remember label {
+    margin-left: 8px;
+    font-size: 1.4rem;
+}
+
+.login__option a {
+    color: var(--color-medium);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.login__btn,
+.signup__btn,
+.password__btn {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 12px 16px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    transition: all ease .3s;
+    margin-bottom: 20px;
+}
+
+.login__btn:hover,
+.signup__btn:hover,
+.password__btn:hover {
+    opacity: 0.9;
+}
+
+.login__signup,
+.signup__signup {
+    text-align: center;
+    font-size: 1.4rem !important;
+}
+
+.login__signup a,
+.signup__signup a {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+/* -------------------------------<< signup >>----------------------------------- */
+.container-signup,
+.container-password {
+    margin-top: calc(var(--header-height) + 20px);
+    max-height: calc(100vh - var(--header-height) - 40px);
+    overflow-y: overlay;
+}
+
+.signup__otp {
+    position: relative;
+}
+
+.signup__otp input {
+    padding: 12px 92px 12px 16px !important;
+}
+
+.signup__otp--send {
+    position: absolute;
+    bottom: 16px;
+    right: 0;
+    padding: 12px;
+    font-size: 1.6rem;
+    border-left: 1px solid var(--color-bold);
+}

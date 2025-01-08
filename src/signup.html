@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/auth.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+</head>
+<body>
+    <header>
+        <div class="header__left">
+            <img src="./assets/img/logo.png" alt="logo">
+            <a href="./index.html">&#60; Quay lại</a>
+        </div>
+        <div class="header__center">
+            <div class="header__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="" id="search" placeholder="Tìm kiếm khóa học" aria-expanded="false" autocomplete="off">
+                <div class="header__searchResults hidden">
+                    <p>Kết quả tìm kiếm cho 'abc'</p>
+                    <a href="#" class="header__searchResults--item">
+                        <img src="./assets/img/logo.png" alt="">
+                        <p>Khóa học ABC</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__right">
+            <div class="header__course">
+                <button class="header__course--button cursor-pointer" aria-expanded="false">Khóa học của tôi</button>
+                <div class="header__course--list hidden">
+                    <div class="header__right--top">
+                        <h6>Khóa học của tôi</h6>
+                        <a href="#">Xem tất cả</a>
+                    </div>
+                    <div class="header__course--bottom">
+                        <a class="header__course--item cursor-pointer">
+                            <img src="./assets/img/yellow.jpg" alt="course">
+                            <p>Khóa học ABC</p>
+                        </a>
+                        <a class="header__course--item cursor-pointer">
+                            <img src="./assets/img/yellow.jpg" alt="course">
+                            <p>Khóa học ABC</p>
+                        </a>
+                        <a class="header__course--item cursor-pointer">
+                            <img src="./assets/img/yellow.jpg" alt="course">
+                            <p>Khóa học ABC</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__noti">
+                <i class="fa-solid fa-bell cursor-pointer"></i>
+                <div class="header__noti--list hidden">
+                    <div class="header__right--top">
+                        <h6>Thông báo</h6>
+                        <a href="#">Xem tất cả</a>
+                    </div>
+                    <div class="header__noti--bottom">
+                        <a class="header__noti--item cursor-pointer">
+                            <img src="./assets/img/logo.png" alt="course">
+                            <p>Thông báo ABC</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__user">
+                <img class="cursor-pointer" src="./assets/img/avt.png" alt="">
+                <div class="header__user--menu hidden">
+                    <div class="header__user--top">
+                        <img class="cursor-pointer" src="./assets/img/avt.png" alt="">
+                        <p>Nguyễn Văn A</p>
+                    </div>
+                    <hr>
+                    <div class="header__user--bottom">
+                        <a href="#">Tài khoản</a>
+                        <a href="#">Quản lý</a>
+                        <a href="#">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container-auth">
+        <div class="container-signup">
+            <h1>Đăng ký</h1>
+            <p>Tên người dùng</p>
+            <input type="text" id="username" placeholder="Nhập tên" required>
+            <p>Tài khoản</p>
+            <input type="text" id="username" placeholder="Nhập tài khoản" required>
+            <p>Mật khẩu</p>
+            <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+            <p>Nhập lại mật khẩu</p>
+            <input type="password" id="password" placeholder="Nhập lại mật khẩu" required>
+            <p>Email</p>
+            <input type="email" id="username" placeholder="Nhập email" required>
+            <div class="signup__otp">
+                <p>Vui lòng nhập mã xác nhận đã gửi đến email</p>
+                <input type="text" id="otp" placeholder="Nhập mã OTP">
+                <div class="signup__otp--send cursor-pointer">Gửi mã</div>
+            </div>
+            <input class="signup__btn cursor-pointer" type="submit" value="Đăng ký">
+            <p class="signup__signup">Nếu đã có tài khoản, hãy <a href="#">đăng nhập!</a></p>
+        </div>
+    </div>
+
+    <script src="./assets/js/header.js"></script>
+</body>
+</html>
