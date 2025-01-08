@@ -289,3 +289,10 @@ header {
 .header__user--bottom a:hover {
     color: var(--color-bold);
 }
+
+.header__auth a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--color-bold);
+    margin-left: 20px;
+}
