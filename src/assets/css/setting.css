@@ -1,0 +1,252 @@
+.container__setting {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: relative;
+    padding-top: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.background__setting {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 40%), radial-gradient(rgb(255, 209, 82) 30%, rgb(226, 105, 150), rgba(226, 105, 150, 0.4) 41%, transparent 52%), radial-gradient(rgb(160, 51, 255) 37%, transparent 46%), linear-gradient(155deg, transparent 65%, rgb(37, 212, 102) 95%), linear-gradient(45deg, rgb(0, 101, 224), rgb(15, 139, 255));
+    z-index: -9999;
+} 
+
+/* ----------------------<< icon exit >>----------------------- */
+.setting__exit {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    background-color: #0000001a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    text-decoration: none;
+}
+
+.setting__exit:hover {
+    background-color: #00000033;
+}
+
+.setting__exit i {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-bold);
+}
+
+.container__setting h1 {
+    font-size: 3.2rem;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container__setting h3 {
+    font-size: 2rem;
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.setting__list {
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px
+}
+
+.setting__item {
+    width: 100%;
+    padding: 16px 16px;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all ease .3s;
+    position: relative;
+}
+
+.setting__item:hover {
+    background-color: #f9f8f8;
+}
+
+.setting__item:not(:last-child) {
+    border-bottom: 1px solid var(--color-pale);
+}
+
+.setting__item h4 {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+}
+
+.setting__item p {
+    font-size: 1.4rem;
+    color: var(--color-medium);
+}
+
+.setting__item i {
+    font-size: 1.8rem;
+    color: var(--color-medium);
+}
+
+.setting__item img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+.setting__modal {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+    z-index: 10000;
+    display: none;
+}
+
+.setting__modal--container {
+    margin: auto;
+    width: 420px;
+    padding: 16px 30px 30px 30px;
+    z-index: 9999;
+    background: linear-gradient(to bottom right, rgb(254, 249, 241), rgb(239, 252, 245));
+    border-radius: 10px;
+}
+
+.setting__modal--exit {
+    width: calc(100% + 15px);
+    text-align: right;
+}
+
+.setting__modal--exit i {
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: var(--color-pale);
+    padding: 4px 6px;
+    border-radius: 50%;
+}
+
+.setting__modal--container .setting__title {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 24px;
+    margin-top: 16px;
+    color: var(--color-bold);
+    font-weight: 600;
+}
+
+.setting__modal--container input,
+.setting__modal--avt button {
+    padding: 12px 16px;
+    width: 100%;
+    margin-bottom: 16px;
+    outline: none;
+    border-radius: 20px;
+}
+
+.setting__modal--container input:not([type="submit"]) {
+    font-size: 1.4rem;
+    border: 1px solid var(--color-medium);
+}
+
+.setting__modal--container input[type="submit"] {
+    font-size: 1.6rem;
+    border: none;
+    background-color: rgb(63, 222, 250);
+    color: var(--color-white);
+}
+
+.setting__modal--avt {
+    position: relative;
+}
+
+.setting__modal--avt button {
+    font-size: 1.6rem;
+    text-align: left;
+    border: 1px solid var(--color-pale);
+    background-color: var(--color-white);
+    color: var(--color-bold);
+    border-radius: 32px !important;
+    padding: 11px 15px !important;
+}
+
+.setting__modal--avt button i {
+    font-size: 2rem;
+    margin-right: 12px;
+    font-style: normal;
+}
+
+.setting__modal--img {
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.setting__modal--img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.setting__modal--dragText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.setting__modal--dragText {
+    font-size: 4rem;
+    font-weight: 600;
+    cursor: copy;
+}
+
+
+.setting__model--qr {
+    position: relative;
+    width: 100%;
+}
+
+.setting__model--qr p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.6rem;
+    color: var(--color-bold);
+    text-align: center;
+    padding: 12px 16px 11px 16px;
+    border-left: 1px solid var(--color-medium);
+}
+
+.setting__model--qr input {
+    padding: 12px 100px 12px 16px;
+}

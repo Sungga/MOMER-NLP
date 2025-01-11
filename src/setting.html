@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/setting.css">
+</head>
+<body>
+    <div class="background__setting"></div>
+    <div class="container__setting">
+        <a href="./" class="setting__exit"><i class="fa-solid fa-xmark"></i></a>
+        <h1>Cài đặt tài khoản - taikhoanabc</h1>
+        <h3>Thông tin cơ bản</h3>
+        <div class="setting__list">
+            <!-- name -->
+            <div class="setting__item cursor-pointer">
+                <div>
+                    <h4>Họ và tên</h4>
+                    <p>Nguyễn Văn A</p>
+                </div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="setting__modal">
+                <div class="setting__modal--container">
+                    <div class="setting__modal--exit"><i class="fa-solid fa-xmark setting__modal--exitIcon"></i></div>
+                    <p class="setting__title">Cập nhật tên của bạn</p>
+                    <input type="text" placeholder="Nguyễn Văn A">
+                    <input class="cursor-pointer" type="submit" value="Lưu lại">
+                </div>
+            </div>
+
+            <!-- avt -->
+            <div class="setting__item cursor-pointer">
+                <div>
+                    <h4>Ảnh đại diện</h4>
+                    <img src="./assets/img/avt.png" alt="">
+                </div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="setting__modal">
+                <div class="setting__modal--container setting__modal--avt">
+                    <div class="setting__modal--exit"><i class="fa-solid fa-xmark setting__modal--exitIcon"></i></div>
+                    <p class="setting__title">Cập nhật tên ảnh đại diện</p>
+                    <div class="setting__modal--img">
+                        <img src="./assets/img/avt.png" alt="">
+                    </div>
+                    <button class="cursor-pointer"><i>+</i>Tải ảnh mới lên</button>
+                    <input type="file" hidden>
+                    <input class="cursor-pointer" type="submit" value="Lưu lại">
+                    <div class="setting__modal--dragText">
+                        <p>Thả ảnh ở đây</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>Thông tin bảo mật</h3>
+        <div class="setting__list">
+            <!-- password -->
+            <div class="setting__item cursor-pointer">
+                <div>
+                    <h4>Đổi mật khẩu</h4>
+                    <p>Đổi mật khẩu của bạn</p>
+                </div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="setting__modal">
+                <div class="setting__modal--container">
+                    <div class="setting__modal--exit"><i class="fa-solid fa-xmark setting__modal--exitIcon"></i></div>
+                    <p class="setting__title">Đổi mật khẩu</p>
+                    <input type="text" placeholder="Mật khẩu cũ">
+                    <input type="text" placeholder="Mật khẩu mới">
+                    <input type="text" placeholder="Nhập lại mật khẩu mới">
+                    <input class="cursor-pointer" type="submit" value="Lưu lại">
+                </div>
+            </div>
+
+            <!-- 2FA -->
+            <div class="setting__item cursor-pointer">
+                <div>
+                    <h4>Xác minh 2 bước</h4>
+                    <p>Đang tắt</p>
+                </div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="setting__modal">
+                <div class="setting__modal--container">
+                    <div class="setting__modal--exit"><i class="fa-solid fa-xmark setting__modal--exitIcon"></i></div>
+                    <p class="setting__title">Bật xác thực 2 bước</p>
+                    <input type="text" placeholder="Nhập mật khẩu của bạn">
+                    <input class="cursor-pointer" type="submit" value="Bật xác thực">
+                </div>
+            </div>
+
+            <!-- email -->
+            <div class="setting__item cursor-pointer">
+                <div>
+                    <h4>Email khôi phục</h4>
+                    <p>a******c@gmail.com</p>
+                </div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="setting__modal">
+                <div class="setting__modal--container">
+                    <div class="setting__modal--exit"><i class="fa-solid fa-xmark setting__modal--exitIcon"></i></div>
+                    <p class="setting__title">Cập nhật tên của bạn</p>
+                    <input type="text" name="" id="" placeholder="Nhập mật khẩu">
+                    <input type="email" placeholder="Nhập email mới">
+                    <div class="setting__model--qr">
+                        <input type="text" name="" id="" placeholder="Nhập QR gửi về email cũ">
+                        <p>Gửi mã</p>
+                    </div>
+                    <input class="cursor-pointer" type="submit" value="Lưu lại">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/setting.js"></script>
+</body>
+</html>
