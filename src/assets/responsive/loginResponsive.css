@@ -1,28 +1,8 @@
-/* -------------------------<< tablet screen >>------------------------------ */
-@media (min-width:721px) and (max-width:1023px) {
-    .header__left h1 {
-        display: none;
-    }
-
-    .header__center {
-        width: 100%;
-    }
-
-    .header__course--button {
-        display: none;
-    }
-
-    .course__item {
-        width: calc(100% / 2 - 64px);
-    }
-}
-
 /* -------------------------<< mobile screen >>------------------------------ */
 @media (max-width:721px) {
     header {
         display: flex;
         justify-content: center;
-        padding: 0 8px;
     }
     
     .header__left {
@@ -31,6 +11,10 @@
     }
 
     .header__left h1 {
+        display: none;
+    }
+
+    .header__left a {
         display: none;
     }
 
@@ -70,13 +54,5 @@
     }
     
 
-    
-}
-
-/* -------------------------<< pc screen >>------------------------------ */
-@media (min-width:1024px) {
-    .course__item {
-        width: calc(100% / 3 - 64px);
-    }
     
 }
